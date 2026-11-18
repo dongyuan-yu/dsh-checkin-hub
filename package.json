@@ -1,0 +1,50 @@
+{
+  "name": "dsh-checkin-hub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "统一签到中心 —— 把本机 Nano / 雅书 / MiniMax Code / WorkBuddy / TRAE / 豆包 的每日签到收进一个定时器、一个设置页、一个工具。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  },
+  "engines": {
+    "dsh": ">=0.1.7-rc.1",
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "checkin",
+    "签到",
+    "automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongyuan-yu/dsh-checkin-hub.git"
+  },
+  "license": "MIT"
+}

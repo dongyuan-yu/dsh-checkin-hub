@@ -1,0 +1,20 @@
+node_modules/
+*.tgz
+*.tmp
+
+# 运行时数据，绝不入库
+config.json
+today.json
+self-base.json
+*.log
+.hub.tmp
+
+# 测试脚本
+_t*.mjs
+_probe*.mjs
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

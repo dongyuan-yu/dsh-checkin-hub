@@ -1,0 +1,5 @@
+- insert:
+    - id: checkin-hub
+      name: dsh-checkin-hub
+      config:
+        enabled: true
